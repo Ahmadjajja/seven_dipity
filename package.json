@@ -1,0 +1,41 @@
+{
+  "name": "sevendipity",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "seed": "tsx scripts/seed.ts",
+    "typecheck": "tsc --noEmit",
+    "dial:extract": "tsx --conditions=react-server scripts/dial-extract-test.ts",
+    "dial:call": "tsx --conditions=react-server scripts/dial-call.ts",
+    "dial:tick": "bash scripts/tick-loop.sh",
+    "keewano:register": "tsx --conditions=react-server scripts/keewano-register.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.133.0",
+    "@getdial/sdk": "0.41.1",
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "@supabase/supabase-js": "^2.117.3",
+    "next": "16.4.0",
+    "qrcode": "^1.5.4",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "server-only": "^0.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/turbopack": "^4",
+    "@types/node": "^20",
+    "@types/qrcode": "^1.5.5",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "dotenv": "^18.0.7",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.0",
+    "tailwindcss": "^4",
+    "tsx": "^4.23.15",
+    "typescript": "^5"
+  }
+}
